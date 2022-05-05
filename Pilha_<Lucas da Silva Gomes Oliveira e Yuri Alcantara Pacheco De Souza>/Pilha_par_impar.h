@@ -17,8 +17,8 @@ typedef struct
    Apontador Fundo, Topo;
    int Tamanho;
 }TipoPilha;
-void Empilha (TipoItem , TipoPilha *);
-void Desempilha (TipoItem *, TipoPilha *);
+void push(TipoItem , TipoPilha *);
+void pop(TipoItem *, TipoPilha *);
 void FpVazia (TipoPilha *);
 void Vazia (TipoPilha);
 
@@ -30,7 +30,7 @@ void FpVazia (TipoPilha *Pilha)
    Pilha->Tamanho=0;
 }
 
-void Empilha (TipoItem x, TipoPilha *Pilha)
+void push(TipoItem x, TipoPilha *Pilha)
 {
   Apontador Aux;
 
@@ -46,7 +46,7 @@ void Vazia (TipoPilha Pilha)
    Pilha.Topo==Pilha.Fundo;
 }
 
-void Desempilha(TipoItem *Item, TipoPilha *Pilha)
+void pop(TipoItem *Item, TipoPilha *Pilha)
 {
   Apontador Aux;
 
