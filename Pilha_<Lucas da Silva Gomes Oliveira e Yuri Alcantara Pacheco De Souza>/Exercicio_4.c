@@ -25,13 +25,13 @@ int main ()
       else
       {
         itemImpar.Chave=numeros;
-        Empilha(itemImpar,&pilhaImpar);
+        push(itemImpar,&pilhaImpar);
       }
     }
     printf("Numeros Pares : ");
     for (int i=pilhaPar.Tamanho; i > 0; i--)
     {
-      Desempilha(&itemPar, &pilhaPar);
+      pop(&itemPar, &pilhaPar);
        printf("\n%d\n", itemPar.Chave);
     }
    printf("\nNumeros Impares : ");
